@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "packageName": "@paperclipai/teams-catalog",
   "packageVersion": "0.1.0",
-  "generatedAt": "2026-06-04T18:03:41.262Z",
+  "generatedAt": "2026-06-19T19:13:53.040Z",
   "teams": [
     {
       "id": "paperclipai:bundled:company-defaults:core-exec-team",
@@ -374,6 +374,165 @@
       "trustLevel": "assets",
       "compatibility": "compatible",
       "contentHash": "sha256:74ddeaeb11805835a4a67fc4530b048ab7f8aa1dc7d2b80acea139a933d158d3"
+    },
+    {
+      "id": "paperclipai:optional:agency:scandesign-delivery",
+      "key": "paperclipai/optional/agency/scandesign-delivery",
+      "kind": "optional",
+      "category": "agency",
+      "slug": "scandesign-delivery",
+      "name": "Scandesign Delivery",
+      "description": "Delivery org for a Magento 2 ecommerce agency. A Delivery Lead reports to the human project lead and coordinates a Magento Solution Analyst, a QA Engineer, and an Account Coordinator across one project per client. PM, QA, and coordination only — no production code is written or merged.",
+      "path": "catalog/optional/agency/scandesign-delivery",
+      "entrypoint": "TEAM.md",
+      "schema": "agentcompanies/v1",
+      "defaultInstall": false,
+      "recommendedForCompanyTypes": [
+        "agency",
+        "ecommerce",
+        "services"
+      ],
+      "tags": [
+        "agency",
+        "ecommerce",
+        "magento",
+        "hyva",
+        "delivery",
+        "qa"
+      ],
+      "counts": {
+        "agents": 4,
+        "projects": 1,
+        "tasks": 0,
+        "routines": 1,
+        "localSkills": 0,
+        "catalogSkills": 6,
+        "externalSkillSources": 0
+      },
+      "rootAgentSlugs": [
+        "delivery-lead"
+      ],
+      "agentSlugs": [
+        "account-coordinator",
+        "delivery-lead",
+        "magento-analyst",
+        "qa"
+      ],
+      "projectSlugs": [
+        "sample-client"
+      ],
+      "requiredSkills": [
+        {
+          "type": "catalog",
+          "ref": "agent-browser",
+          "agentSlugs": [
+            "qa"
+          ],
+          "resolved": true,
+          "catalogSkillId": "paperclipai:optional:browser:agent-browser",
+          "catalogSkillKey": "paperclipai/optional/browser/agent-browser"
+        },
+        {
+          "type": "catalog",
+          "ref": "doc-maintenance",
+          "agentSlugs": [
+            "account-coordinator"
+          ],
+          "resolved": true,
+          "catalogSkillId": "paperclipai:bundled:docs:doc-maintenance",
+          "catalogSkillKey": "paperclipai/bundled/docs/doc-maintenance"
+        },
+        {
+          "type": "catalog",
+          "ref": "issue-triage",
+          "agentSlugs": [
+            "delivery-lead"
+          ],
+          "resolved": true,
+          "catalogSkillId": "paperclipai:bundled:paperclip-operations:issue-triage",
+          "catalogSkillKey": "paperclipai/bundled/paperclip-operations/issue-triage"
+        },
+        {
+          "type": "catalog",
+          "ref": "qa-acceptance",
+          "agentSlugs": [
+            "qa"
+          ],
+          "resolved": true,
+          "catalogSkillId": "paperclipai:bundled:quality:qa-acceptance",
+          "catalogSkillKey": "paperclipai/bundled/quality/qa-acceptance"
+        },
+        {
+          "type": "catalog",
+          "ref": "task-planning",
+          "agentSlugs": [
+            "delivery-lead",
+            "magento-analyst"
+          ],
+          "resolved": true,
+          "catalogSkillId": "paperclipai:bundled:paperclip-operations:task-planning",
+          "catalogSkillKey": "paperclipai/bundled/paperclip-operations/task-planning"
+        },
+        {
+          "type": "catalog",
+          "ref": "wireframe",
+          "agentSlugs": [
+            "magento-analyst"
+          ],
+          "resolved": true,
+          "catalogSkillId": "paperclipai:bundled:product:wireframe",
+          "catalogSkillKey": "paperclipai/bundled/product/wireframe"
+        }
+      ],
+      "envInputs": [],
+      "sourceRefs": [],
+      "files": [
+        {
+          "path": "TEAM.md",
+          "kind": "team",
+          "sizeBytes": 3470,
+          "sha256": "41159067b733daa96bbf9e42ca978cedf5ef919546cb29daf0a848ca87542a04"
+        },
+        {
+          "path": "agents/account-coordinator/AGENTS.md",
+          "kind": "agent",
+          "sizeBytes": 1659,
+          "sha256": "6219e3c9a67b4428ef0f6bb933c3504b7403defa044659047ea7ec7d09de0cf4"
+        },
+        {
+          "path": "agents/delivery-lead/AGENTS.md",
+          "kind": "agent",
+          "sizeBytes": 2040,
+          "sha256": "c505fb83040c2ac3efe745e51f5ea0ddaddb722acd8e178bb4e71f49520b265f"
+        },
+        {
+          "path": "agents/magento-analyst/AGENTS.md",
+          "kind": "agent",
+          "sizeBytes": 2032,
+          "sha256": "c70da575e1e1ada469d0c862124549cc66bac1692198aa315f5a4078a5aff6fe"
+        },
+        {
+          "path": "agents/qa/AGENTS.md",
+          "kind": "agent",
+          "sizeBytes": 1777,
+          "sha256": "a80dc0c4d3987184978511813c65dbfb9da059e55c16c8dd947b9d6b96d1de31"
+        },
+        {
+          "path": "projects/sample-client/PROJECT.md",
+          "kind": "project",
+          "sizeBytes": 1504,
+          "sha256": "6406075a0496cd85f27795004ad20cdbaac782bb4e529c7acf7459765af28d0f"
+        },
+        {
+          "path": "projects/sample-client/tasks/weekly-delivery-review/TASK.md",
+          "kind": "task",
+          "sizeBytes": 690,
+          "sha256": "e493a9fd2470a2f07f72eb9fdc3c9ac7e7b577a6053408b93b46fe5da6054ab5"
+        }
+      ],
+      "trustLevel": "markdown_only",
+      "compatibility": "compatible",
+      "contentHash": "sha256:ddd2b07554526c47c3020f66505bdf2028a9e10df41c6a5a444f5507238c6bde"
     },
     {
       "id": "paperclipai:optional:content:content-machine",
